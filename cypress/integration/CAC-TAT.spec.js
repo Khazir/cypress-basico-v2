@@ -167,7 +167,7 @@ it('exibe e esconde as mensagens de sucesso e erro usando o .invoke', () => {
 
       })
 
-      it.only('Found the hiden cat', () =>{
+      it('Found the hiden cat', () =>{
         cy.get('#cat').invoke('show').should('be.visible').invoke('hide').should('not.be.visible')
       })
 
